@@ -21,16 +21,18 @@
 # Released under the same terms as Sensu (the MIT license); see LICENSE
 # for details
 
-require 'rubygems' if RUBY_VERSION < '1.9.0'
 require 'sensu-handler'
 require 'net/http'
 
+#
+# Dashign Notifier
+#
 class DashingNotifier < Sensu::Handler
   def widget
     @event['client']['name'] + '-' + @event['check']['name']
   end
 
-  def handle
+  def handle # rubocop:disable all
     token = settings['dashing']['auth_token']
     data = @event['check']['output']
     payload = { 'auth_token' => "#{token}", 'moreinfo' => "#{data}" }.to_json
