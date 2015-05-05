@@ -5,11 +5,12 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-dashing/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-dashing)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-dashing/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-dashing)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-dashing.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-dashing)
+[ ![Codeship Status for sensu-plugins/sensu-plugins-dashing](https://codeship.com/projects/94441700-d5ad-0132-74aa-1e0a7d4d648e/status?branch=master)](https://codeship.com/projects/78141)
 
 ## Functionality
 
 ## Files
- * bin/handler-dashing
+ * bin/handler-dashing.rb
 
 ## Usage
 
