@@ -1,6 +1,6 @@
 ## Sensu-Plugins-dashing
 
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-dashing.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-dashing)
+[ ![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-dashing.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-dashing)
 [![Gem Version](https://badge.fury.io/rb/sensu-plugins-dashing.svg)](http://badge.fury.io/rb/sensu-plugins-dashing)
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-dashing/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-dashing)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-dashing/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-dashing)
