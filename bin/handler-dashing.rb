@@ -32,7 +32,7 @@ class DashingNotifier < Sensu::Handler
     @event['client']['name'] + '-' + @event['check']['name']
   end
 
-  def handle # rubocop:disable all
+  def handle
     token = settings['dashing']['auth_token']
     data = @event['check']['output']
     payload = { 'auth_token' => "#{token}", 'moreinfo' => "#{data}" }.to_json
