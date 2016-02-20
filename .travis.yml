@@ -1,19 +1,33 @@
 language: ruby
 cache:
-  - bundler
+- bundler
 install:
-  - bundle install
+- bundle install
 rvm:
-  - 1.9.3
-  - 2.0
-  - 2.1
-  - 2.2
+- 1.9.3
+- 2.0
+- 2.1
+- 2.2
 notifications:
   email:
     recipients:
-      - sensu-plugin@sensu-plugins.io
+    - sensu-plugin@sensu-plugins.io
     on_success: change
     on_failure: always
-
 script:
-  - 'bundle exec rake default'
+- bundle exec rake default
+- gem build sensu-plugins-dashing.gemspec
+- gem install sensu-plugins-dashing-*.gem
+deploy:
+  provider: rubygems
+  api_key:
+    secure: Vf4nIZYhkl0Er7OS4zF3QzqlyGMdByFMggxWClN8qTOSlrJi++2hdeJSAgKp1YhuBwYtayCCaF1WILNc9N+W/tWvwH6R292XscZJQYt4M8tyev47Zh6e3OjhB7TxhLdc8ZUEnJgA1ooAFkCZVd+aiN6X/UlMVD0esOUkomJvgiM=
+  gem: sensu-plugins-dashing
+  on:
+    tags: true
+    all_branches: true
+    rvm: 1.9.3
+    rvm: 2.0
+    rvm: 2.1
+    rvm: 2.2
+    repo: sensu-plugins/sensu-plugins-dashing
